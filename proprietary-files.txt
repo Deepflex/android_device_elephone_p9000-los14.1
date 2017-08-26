@@ -218,7 +218,6 @@ lib/drm/libdrmmtkplugin.so
 lib/egl/libGLES_mali.so
 lib/hw/audio.primary.mt6755.so
 lib/hw/camera.mt6755.so
-lib/hw/gps.mt6755.so
 lib/hw/gralloc.mt6755.so
 lib/hw/hwcomposer.mt6755.so
 lib/hw/lights.mt6755.so
@@ -321,6 +320,7 @@ lib/libccci_util.so
 lib/libcustom_jni.so
 lib/libcustom_nvram.so
 lib/libcustom_prop.so
+lib/libcutils.so
 lib/libcvsd_mtk.so
 lib/libdcfdecoderjni.so
 lib/libdirect-coredump.so
@@ -408,7 +408,6 @@ lib/libthermalalgo.so
 lib/libtimestretch.so
 lib/libtouchfilter.so
 lib/libudf.so
-lib/libui.so
 lib/libvc1dec_sa.ca7.so
 lib/libvcodec_oal.so
 lib/libvcodec_utility.so
@@ -428,7 +427,6 @@ lib64/egl/libGLES_mali.so
 lib64/hw/audio.primary.mt6755.so
 lib64/hw/camera.mt6755.so
 lib64/hw/fingerprint.default.so
-lib64/hw/gps.mt6755.so
 lib64/hw/gralloc.mt6755.so
 lib64/hw/hwcomposer.mt6755.so
 lib64/hw/lights.mt6755.so
@@ -517,6 +515,7 @@ lib64/libccci_util.so
 lib64/libcustom_jni.so
 lib64/libcustom_nvram.so
 lib64/libcustom_prop.so
+lib64/libcutils.so
 lib64/libcvsd_mtk.so
 lib64/libdcfdecoderjni.so
 lib64/libdirect-coredump.so
@@ -596,7 +595,6 @@ lib64/libstagefrighthw.so
 lib64/libterservice.so
 lib64/libtouchfilter.so
 lib64/libudf.so
-lib64/libui.so
 lib64/libvcodec_utility.so
 lib64/libvcodecdrv.so
 lib64/libwapi.so
