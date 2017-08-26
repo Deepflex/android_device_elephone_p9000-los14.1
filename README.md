@@ -1,7 +1,7 @@
-Elephone P9000 - LineageOS 14.1/AOSP
+Elephone P9000 - CyanogenMod 14.0/AOSP7.0
 ==============
 
-This branch is device for building of the LineageOS 14.1 and Android Nougat 7.0 AOSP ROMs. For more information about building the ROM, read our [build manual](manual).
+This branch is device for building of the CyanogenMod 14.0 and Android Nougat 7.0 AOSP ROMs. For more information about building the ROM, read our [build manual](manual).
 
 ---
 
@@ -9,7 +9,7 @@ This branch is device for building of the LineageOS 14.1 and Android Nougat 7.0 
 
 ![Elephone P9000](http://g03.a.alicdn.com/kf/HTB1.TsuKVXXXXanXXXXq6xXFXXX6/Official-Direct-Elephone-P9000-Helio-P10-MTK6755-2-0GHz-Octa-Core-4GB-RAM-32GB-ROM-5.jpg "Elephone P9000 in black")
 
-Announced on 25th December 2015, the Elephone P9000 (codenamed _"P9000"_) is a flagship smartphone from Elephone. The P9000 now supports LineageOS 14.1!
+Announced on 25th December 2015, the Elephone P9000 (codenamed _"P9000"_) is a flagship smartphone from Elephone. The P9000 now supports CyanogenMod 14.0!
 
 ### Specifications
 
@@ -29,39 +29,42 @@ Front Camera | 8MP (OV)
 
 # Build Information
 
-### Working:
- * All sensors
+### In progress(only for cm-14.0):
+ * Hardware acceleration
+ * Wi-Fi
+ * Offline charging
+ * GPS
+ * AGPS
+ * Vibration
  * Audio
  * Auto brightness
- * Bluetooth
- * Camera rear/front (photo, for video use CAMU)
- * Doze 
- * Enforcing SELinux
- * Fingerprint scanner
- * Flashlight (statusbar and camera)
- * GPS
- * Hardware acceleration
- * HOME Button like in stock
+ * Doze
+ * RAM and ROM
+ * Rotation
+ * All sensors
+ * NFC (payments, pairing .etc)
  * Lazer autofocus
+ * Flashlight (statusbar and camera)
+ * Bluetooth
+ * Camera rear/front (video and photo)
  * Micro SD support
  * MTP and Mass Storage modes
- * NFC (payments, pairing .etc)
- * Offline charging
- * RAM and ROM
- * RIL
- * Rotation
- * Special button new functional
- * Vibration 
- * Wi-Fi 
+ * Audio over Bluetooth (music, calls .etc)
+ * Fingerprint scanner
  * Wi-Fi tethering
+ * HOME Button like in stock
+ * Special button new functional
 
 ### In progress:
- * Video recording
- * HDR
+ * Force close camera with HDR on
+ * RIL improvment for some users
+ * Enforcing SELinux
+ * FMRadio with enforcing SELinux
+ * PE and PE+ (fast charging)
 
 ### Thanks to:
- * LineageOS team
- * Elephone P9000 team (Leskal, Deepflex, Tribual)
+ * CyanogenMod team
+ * Deepflex
  * Wuxianlin
  * Ferhung
  * SHVED
@@ -71,3 +74,4 @@ Front Camera | 8MP (OV)
  * Visi0nary
  * andyrichardson
  * Team M.A.D
+

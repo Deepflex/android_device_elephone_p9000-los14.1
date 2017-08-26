@@ -30,10 +30,10 @@ import android.os.SystemProperties;
 import android.provider.Settings;
 import android.provider.Settings.Global;
 
-import android.telephony.Rlog;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.telephony.MtkEccList;
+
 
 /**
  * Custom wrapper for MTK requests
@@ -65,7 +65,6 @@ public class MT6755 extends RIL implements CommandsInterface {
     public MT6755(Context context, int preferredNetworkType, int cdmaSubscription) {
         super(context, preferredNetworkType, cdmaSubscription, null);
         //mContext = context;
-        Rlog.i("MT6755", "Ctor1: context is " + mContext);
         mTelephonyManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
         mEccList = new MtkEccList();
     }
@@ -74,7 +73,6 @@ public class MT6755 extends RIL implements CommandsInterface {
             int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
         //mContext = context;
-        Rlog.i("MT6755", "Ctor2: context is " + mContext);
         mTelephonyManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
         mEccList = new MtkEccList();
     }
@@ -495,13 +493,12 @@ public class MT6755 extends RIL implements CommandsInterface {
         }
         return ret;
     }
-
+    
     @Override
     public void
     iccIOForApp (int command, int fileid, String path, int p1, int p2, int p3,
             String data, String pin2, String aid, Message result) {
         if (command == 0xc0 && p3 == 0) {
-            Rlog.i("MT6755", "Override the size for the COMMAND_GET_RESPONSE 0 => 15");
             p3 = 15;
         }
         super.iccIOForApp(command, fileid, path, p1, p2, p3, data, pin2, aid, result);

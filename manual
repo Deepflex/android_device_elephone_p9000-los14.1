@@ -15,6 +15,14 @@ cd Working_dir
 After apply patches:
 sh device/elephone/p9000/patches/install.sh
 Write:
-. build/envsetup.sh && breakfast p9000
+
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8g"
+
+./prebuilts/sdk/tools/jack-admin kill-server
+
+./prebuilts/sdk/tools/jack-admin start-server
+
+. build/envsetup.sh
+
 brunch p9000
-Wait of finish, for me ~2hr
+Wait of finish, for me ~4hr

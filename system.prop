@@ -1,5 +1,7 @@
-# Camera
-persist.camera.HAL3.enabled=1
+#
+#
+# system.prop for Elephone P9000
+#
 
 # RIL
 rild.libpath=mtk-ril.so
@@ -43,3 +45,7 @@ ro.config.max_starting_bg=3
 
 # Use 3 threads max for dex2oat
 ro.sys.fw.dex2oat_thread_count=3
+
+# Camera HAL
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
